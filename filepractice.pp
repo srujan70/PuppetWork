@@ -1,4 +1,4 @@
-file { '/temp.txt':
+file { '/home/vagrant/PuppetWork/temp.txt':
     ensure => file,
     owner  => 'root',
     group  => 'root',
