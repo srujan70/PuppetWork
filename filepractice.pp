@@ -1,7 +1,6 @@
-file { '/home/vagrant/PuppetWork/temp.txt':
-    ensure => file,
+file { '/mydir':
+    ensure => directory,
     owner  => 'root',
     group  => 'root',
     mode   => '0644',
-    content => 'Hi this is from puppet'
-    }
+     }
