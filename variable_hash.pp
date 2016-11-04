@@ -4,7 +4,7 @@ $user = {
 }
 
 $file_details ={
-    'path' => '/temp/test.txt',
+    'path' => '/tmp/test.txt',
     'owner'=> 'root',
     'mode' => '0644',
     'content' => 'testing',
