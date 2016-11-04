@@ -13,7 +13,7 @@ $file_details ={
  file { $file_details['path']:
      ensure => file,
      owner  => $file_details['owner'],
-     group  => group,
+     group  => root,
      mode   => $file_details['mode'],
      content => $file_details['content'],
  }   
