@@ -5,10 +5,10 @@ $filecontent = "This is from Puppet \n The owner is ${owner} \n The group is ${g
 
 file { '/temp.txt':
     ensure => file,
-    owner  => owner,
+    owner  => $owner,
     group  => $group,
     mode   => $mode,
-    content => $filecontent,
+    content => filecontent,
     
 }
 
