@@ -1,7 +1,7 @@
 $owner = 'root'
 $group = 'root'
 $mode  = '0644'
-$filecontent = "This is from Puppet \n The owner is ${owner} \n The group is ${group}"
+$filecontent = "This is from Puppet \n The owner is ${owner} \n The group is ${group} \n"
 
 file { '/temp.txt':
     ensure => file,
