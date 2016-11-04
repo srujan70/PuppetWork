@@ -6,6 +6,7 @@ file { '/temp.txt':
     owner  => $owner,
     group  => $group,
     mode   => $mode,
+    content => "This is from Puppet",
     
 }
 
