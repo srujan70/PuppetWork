@@ -19,4 +19,4 @@ file { '/mydir':
     mode   => $mode,
     
 }
-notify { '$filecontent': } 
+notify { $filecontent :} 
