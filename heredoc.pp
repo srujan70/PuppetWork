@@ -4,7 +4,7 @@ $filecontent = @(Begin)
   ARE 
   YOU
   2
-BEGIN
+Begin
 
 file { '/tmp/heredoc.txt':
     ensure => file,
