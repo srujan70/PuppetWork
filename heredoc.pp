@@ -23,6 +23,6 @@ notify { $dynfilecontent: }
 
 $ntp_service = $facts['os']['family']?{
     'redhat'=>'ntpd'
-    'debian'=>'ntp'
+    'Debian'=>'ntp'
 }
 notify { $ntp_service: } 
