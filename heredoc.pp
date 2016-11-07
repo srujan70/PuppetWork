@@ -13,7 +13,7 @@ file { '/tmp/heredoc.txt':
     content => $filecontent,
 }
 
-$dynfilecontent = @("END")
+$dynfilecontent = @(END)
 #This is managed by puppet
 File content is $filecontent
 END
