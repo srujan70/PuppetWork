@@ -9,6 +9,6 @@ file { '/tmp/heredoc.txt':
     ensure => file,
     owner  => root,
     group  => root,
-    mode   => 0644,
+    mode   => '0644',
     content => $filecontent,
 }
