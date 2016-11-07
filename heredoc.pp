@@ -20,3 +20,9 @@ File content is ${filecontent}
 END
 
 notify { $dynfilecontent: } 
+
+$ntp_service = $facts['os']['family']?{
+    'redhat'=>'ntpd'
+    'debian'=>'ntp'
+}
+notify { $ntp_service: } 
