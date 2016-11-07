@@ -17,3 +17,5 @@ $dynfilecontent = @("END")
 #This is managed by puppet
 File content is ${filecontent}
 END
+
+notify { $dynfilecontent: } 
