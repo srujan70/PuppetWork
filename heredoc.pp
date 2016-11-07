@@ -3,6 +3,7 @@ $filecontent = @(BEGIN)
   HOW
   ARE 
   YOU
+  2
 BEGIN
 
 file { '/tmp/heredoc.txt':
@@ -13,7 +14,7 @@ file { '/tmp/heredoc.txt':
     content => $filecontent,
 }
 
-$dynfilecontent = @(END)
+$dynfilecontent = @("END")
 #This is managed by puppet
 File content is $filecontent
 END
