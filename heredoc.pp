@@ -15,7 +15,7 @@ file { '/tmp/heredoc.txt':
 
 $dynfilecontent = @("END")
 #This is managed by puppet
-File content is ${filecontent}
+File content is $filecontent
 END
 
 notify { $dynfilecontent: } 
