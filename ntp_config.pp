@@ -41,5 +41,5 @@ service { "Ntp_Service":
     ensure     => running,
     enable     => true,
     name       =>$ntp_service,
-    subscribe  => File['/etc/ntp_conf'],
+    subscribe  => File['/etc/ntp.conf'],
 }
