@@ -1,3 +1,3 @@
-each ( $facts['Partitions'] ) | $key, $value | {
+each ( $facts['partitions'] ) | $key, $value | {
     notify { "${key}=${value['size']}": } 
     }
