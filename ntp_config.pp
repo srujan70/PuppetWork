@@ -21,7 +21,7 @@ case $facts['os']['family'] {
 
 package { 'ntp':
     ensure => installed,
-    before => File['/etc/ntp_conf'],
+    before => File['/etc/ntp.conf'],
 }
 
 File {
@@ -31,7 +31,7 @@ File {
     ensure => 'file',
 }
 
-file { '/etc/ntp_conf':
+file { '/etc/ntp.conf':
     content => $ntp_conf,
     notify => Service['Ntp_Service'],
     
