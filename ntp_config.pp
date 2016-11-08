@@ -31,7 +31,7 @@ File {
     ensure => 'file',
 }
 
-file { '/etc/ntp.conf':
+file { '/etc/ntp_conf':
     content => $ntp_conf,
     notify => Service['Ntp_Service'],
     
